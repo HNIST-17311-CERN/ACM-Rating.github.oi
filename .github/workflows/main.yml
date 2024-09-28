@@ -1,0 +1,68 @@
+name: deploy web
+on:
+  push:
+    branches: [master] # 当master分支有新的提交时(push)
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */6 * * *' # 每六小时自动运行一次
+
+    
+    # 设置tokenn访问权限
+permissions: 
+  contents: read # 只读访问仓库内容(contents: read)
+  pages: write # 写入权限以更新Pages(pages: write)
+  id-token: write # 访问身份令牌(id-token: write)
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+  
+jobs:
+  build:
+    # 在ubuntu下运行
+    runs-on: ubuntu-latest
+    # 一个job可以有多个step（步骤），每个step按顺序执行，每个step可以运行一个action（动作）。
+    steps:
+       - name: Checkout # 第一步是使用 actions/checkout@v3 将当前仓库代码检出到运行环境中。这一步可以确保我们操作的是最新提交的代码。
+         uses: actions/checkout@v2
+       - name: Set up JDK 11 # 接下来，使用 actions/setup-java@v3 设置JDK 17的开发环境，以确保Java项目能够在构建服务器上正常编译运行。
+         uses: actions/setup-java@v3
+         with:
+              java-version: '11'
+              distribution: 'temurin'
+       - name: Build with Maven # 项目通过Maven构建，并打包成 .jar 文件。-DskipTests 用于跳过测试，以加快打包速度。
+         run: mvn clean package -DskipTests
+       - name: Setup pnpm
+         uses: pnpm/action-setup@v2 # 安装pnpm并添加到环境变量
+         with:
+          version: 8.6.12 # 指定需要的 pnpm 版本
+       - name: Setup Node
+         uses: actions/setup-node@v3
+         with:
+          node-version: 20
+          cache: pnpm # 设置缓存
+       - name: Setup Pages
+         uses: actions/configure-pages@v3  # 在工作流程自动配置GithubPages
+       - name: Install dependencies
+         run: pnpm install # 安装依赖
+       - name: Build with VitePress
+         run: |
+          pnpm run docs:build # 启动项目
+          touch .nojekyll  # 通知githubpages不要使用Jekyll处理这个站点，不知道为啥不生效，就手动搞了
+       - name: Upload artifact
+         uses: actions/upload-pages-artifact@v2  # 上传构建产物
+         with:
+          path: .vitepress/dist # 指定上传的路径，当前是根目录，如果是docs需要加docs/的前缀
+
+  # 部署工作
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }} # 从后续的输出中获取部署后的页面URL
+    needs: build    # 在build后面完成
+    runs-on: ubuntu-latest  # 运行在最新版本的ubuntu系统上
+    name: Deploy
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment  # 指定id
+        uses: actions/deploy-pages@v2 # 将之前的构建产物部署到github pages中         
