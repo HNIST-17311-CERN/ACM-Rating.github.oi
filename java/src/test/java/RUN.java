@@ -1,5 +1,5 @@
 
-import java.io.IOException;
+import java.io.*;
 import java.util.Scanner;
 
 import com.alibaba.fastjson.JSONArray;
@@ -105,6 +105,21 @@ public class RUN {
 //        }
         Gson gson = new Gson();
         String json = gson.toJson(fuck);
+
+        File file = new File("src/main/resources/data.json");
+        if(file.exists())
+        {
+            System.out.println("文件已经存在");
+            FileWriter fileWritter = new FileWriter ("src/main/resources/data.json");
+            BufferedWriter bufferWritter = new BufferedWriter(fileWritter);
+            bufferWritter.write(json);
+            bufferWritter.close();
+        }
+        else
+        {
+            file.createNewFile();
+            System.out.println("文件不存在，已创建");
+        }
 
         System.out.println(json);
     }
