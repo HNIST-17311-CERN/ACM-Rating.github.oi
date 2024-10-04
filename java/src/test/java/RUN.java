@@ -1,5 +1,7 @@
 
 import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 import com.alibaba.fastjson.JSONArray;
@@ -96,23 +98,42 @@ public class RUN {
                 }
             }
         }
-//        for(int i=0;i<2;i++)
-//        {
-//            for(int j=0;j<x.length;j++)
-//            {
-//                System.out.println(fuck[i][j].Name+" "+fuck[i][j].CodeForces+" "+fuck[i][j].CodeForces_rating+" "+fuck[i][j].CodeForces_rank);
-//            }
-//        }
+
+        List<String>arr = new ArrayList<String>();
+        String one="| 年级 | 姓名 | Codeforces | Nowcoder | AtCoder |\n";
+        String tow="| :---: | :---: | :---: | :---: | :---: |\n";
+        for(int i=0;i<2;i++)
+        {
+            for(int j=0;j<x.length;j++)
+            {
+                String two="| "+" | "+fuck[i][j].Name+" | "+"["+fuck[i][j].CodeForces+"]"+"(https://codeforces.com/profile/"+fuck[i][j].CodeForces+")"+"("+fuck[i][j].CodeForces_rating+")"+" | "+"["+fuck[i][j].Nowcode+"]"+"(https://ac.nowcoder.com/acm/user/"+fuck[i][j].Nowcode+")"+"("+fuck[i][j].Nowcode_rating+")"+" | "+fuck[i][j].Nowcode+" | "+fuck[i][j].Atcode+" | "+"\n";
+                arr.add(two);
+            }
+        }
+        String ans="";
+        ans+=one;
+        ans+=tow;
+        int yyye=2023;
+        for(int i=0;i<2;i++)
+        {
+            String tree="| "+yyye+" |  |  |  |  |\n";
+            ans+=tree;
+            for(int j=0;j<x.length;j++)
+            {
+                ans+=arr.get(j+i*x.length);
+            }
+            yyye++;
+        }
+
         Gson gson = new Gson();
         String json = gson.toJson(fuck);
-
-        File file = new File("src/main/resources/data.json");
+        File file = new File("src/main/resources/ingrat.md");
         if(file.exists())
         {
             System.out.println("文件已经存在");
-            FileWriter fileWritter = new FileWriter ("src/main/resources/data.json");
+            FileWriter fileWritter = new FileWriter ("src/main/resources/ingrat.md");
             BufferedWriter bufferWritter = new BufferedWriter(fileWritter);
-            bufferWritter.write(json);
+            bufferWritter.write(ans);
             bufferWritter.close();
         }
         else
