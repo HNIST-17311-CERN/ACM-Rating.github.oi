@@ -3,23 +3,23 @@
 layout: home
 #fuck
 hero:
-  name: "My Awesome Project"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: "我的牛逼网站"
+  text: "飞起来"
+  tagline: 我的牛逼网站
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: codeforces
+      link: https://codeforces.com/
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: nowcoder
+      link: https://ac.nowcoder.com/acm/contest/vip-index?topCategoryFilter=13
 # fuck 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: 屁股1
+    details: 待到秋来九月八,我花开后百花杀.
+  - title: 屁股2
+    details: 留白
+  - title: 屁股3
+    details: 犀利马哈
 ---
 

@@ -3,21 +3,21 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: "/ACM-Rating.github.oi/",
-  title: "My Awesome Project",
+  title: "我的牛逼网站",
   description: "A VitePress Site",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: '首页', link: '/' },
+      { text: 'ACM', link: '/markdown-examples' }
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'ACM',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' },
+          { text: 'Markdown 示例', link: '/markdown-examples' },
+          { text: 'Runtime API 示例', link: '/api-examples' },
           { text: 'rating', link: 'java/src/main/resources/ingrat'}
         ]
       }
