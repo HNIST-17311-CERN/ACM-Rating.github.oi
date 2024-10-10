@@ -6,6 +6,9 @@ hero:
   name: "我的牛逼网站"
   text: "飞起来"
   tagline: 我的牛逼网站
+  image:
+    src: public\source.gif
+    alt: qitao
   actions:
     - theme: brand
       text: codeforces
