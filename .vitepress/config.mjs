@@ -7,6 +7,7 @@ export default defineConfig({
   base: "/ACM-Rating.github.oi/",
   title: "我的牛逼网站",
   description: "A VitePress Site",
+  logo: 'public\qitao.png',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [

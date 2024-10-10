@@ -7,7 +7,7 @@ hero:
   text: "飞起来"
   tagline: 我的牛逼网站
   image:
-    src: public\source.gif
+    src: /source.gif
     alt: qitao
   actions:
     - theme: brand
