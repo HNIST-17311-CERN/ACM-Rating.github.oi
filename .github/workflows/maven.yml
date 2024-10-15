@@ -37,7 +37,7 @@ jobs:
     - uses: actions/cache@v3
       with:
         path: ~/.m2
-        key: ${{ hashFiles('pom.xml') }}
+        key: ${{ hashFiles('/java/pom.xml') }}
 
     - name: Deploy to server
       uses: garygrossgarten/github-action-scp@release
