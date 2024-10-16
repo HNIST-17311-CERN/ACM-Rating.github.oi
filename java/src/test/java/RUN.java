@@ -10,6 +10,11 @@ import com.google.gson.Gson;
 import liu.com.JOSN;
 import liu.com.excell;
 
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+
 public class RUN {
 
     static Scanner sc = new Scanner(System.in);
@@ -85,12 +90,26 @@ public class RUN {
                             }
                         }
                     }
-//                    else if(k==2)//nowcode
-//                    {
-//                        String nowcode_json=api.run(nowcode_URL+x.Man[i][j].nowcode);
-//                        JSONObject jsonObject = JSONObject.parseObject(nowcode_json);
-//
-//                    }
+
+                    else if(k==2)//nowcode
+                    {
+                        fuck[i][j].Nowcode=x.Man[i][j].nowcode;
+                        String userId = fuck[i][j].Nowcode; // 替换为实际用户ID
+                        String url = "https://ac.nowcoder.com/acm/contest/rating-index?searchUserName=" + userId;
+                        Document doc = Jsoup.connect(url).get();
+
+                        // 根据网页结构选择rating分所在的元素
+                        Element ratingElement = doc.selectFirst("body > div > div.nk-main.clearfix.js-container > div > div > div.platform-mod-bd.js-list > table > tbody > tr > td:nth-child(5) > span"); // 替换为实际CSS选择器
+
+                        if (ratingElement != null) {
+                            String rating = ratingElement.text();
+                            fuck[i][j].Nowcode_rating=rating;
+                        } else {
+                            fuck[i][j].Nowcode_rating="0";
+                        }
+
+                    }
+
 //                    else if(k==3)//atcode
 //                    {
 //                        String atcode_json=api.run(atcode_URL+x.Man[i][j].atcode);
@@ -106,7 +125,7 @@ public class RUN {
         {
             for(int j=0;j<x.length;j++)
             {
-                String two="| "+" | "+fuck[i][j].Name+" | "+"["+fuck[i][j].CodeForces+"]"+"(https://codeforces.com/profile/"+fuck[i][j].CodeForces+")"+"("+fuck[i][j].CodeForces_rating+")"+" | "+"["+fuck[i][j].Nowcode+"]"+"(https://ac.nowcoder.com/acm/user/"+fuck[i][j].Nowcode+")"+"("+fuck[i][j].Nowcode_rating+")"+" | "+fuck[i][j].Nowcode+" | "+fuck[i][j].Atcode+" | "+"\n";
+                String two="| "+" | "+fuck[i][j].Name+" | "+"["+fuck[i][j].CodeForces+"]"+"(https://codeforces.com/profile/"+fuck[i][j].CodeForces+")"+"("+fuck[i][j].CodeForces_rating+")"+" | "+"["+fuck[i][j].Nowcode+"]"+"(https://ac.nowcoder.com/acm/contest/rating-index?searchUserName="+fuck[i][j].Nowcode+")"+"("+fuck[i][j].Nowcode_rating+")"+" | "+fuck[i][j].Atcode+" | "+fuck[i][j].Atcode_rating+" | "+"\n";
                 arr.add(two);
             }
         }
@@ -141,7 +160,7 @@ public class RUN {
             file.createNewFile();
             System.out.println("文件不存在，已创建");
         }
-
+        System.out.println(fuck[0][0].Nowcode);
         System.out.println(json);
     }
 
