@@ -40,6 +40,17 @@ public class RUN {
         cf_color[7].rank="international master";
         cf_color[8].rank="grandmaster";
         cf_color[9].rank="headquarters";
+        cf_color[0].color=" <font color=#0000>";
+        cf_color[1].color=" <font color=#808080>";
+        cf_color[2].color=" <font color=#008000>";
+        cf_color[3].color=" <font color=#03a89e>";
+        cf_color[4].color=" <font color=#0000ff>";
+        cf_color[5].color=" <font color=aa00aa>";
+        cf_color[6].color=" <font color=#ff8c00>";
+        cf_color[7].color=" <font color=#ff0000>";
+        cf_color[8].color=" <font color=#ff0000>";
+        cf_color[9].color=" <font color=#000000>";
+        String end="</font>";
         //
         for(int i=0;i<5;i++)
         {
@@ -125,7 +136,7 @@ public class RUN {
         {
             for(int j=0;j<x.length;j++)
             {
-                String two="| "+" | "+fuck[i][j].Name+" | "+"["+fuck[i][j].CodeForces+"]"+"(https://codeforces.com/profile/"+fuck[i][j].CodeForces+")"+"("+fuck[i][j].CodeForces_rating+")"+" | "+"["+fuck[i][j].Nowcode+"]"+"(https://ac.nowcoder.com/acm/contest/rating-index?searchUserName="+fuck[i][j].Nowcode+")"+"("+fuck[i][j].Nowcode_rating+")"+" | "+fuck[i][j].Atcode+" | "+fuck[i][j].Atcode_rating+" | "+"\n";
+                String two="| "+" | "+fuck[i][j].Name+" | "+"["+fuck[i][j].CodeForces+"]"+"(https://codeforces.com/profile/"+fuck[i][j].CodeForces+")"+"("+fuck[i][j].CodeForces_color+fuck[i][j].CodeForces_rating+end+")"+" | "+"["+fuck[i][j].Nowcode+"]"+"(https://ac.nowcoder.com/acm/contest/rating-index?searchUserName="+fuck[i][j].Nowcode+")"+"("+fuck[i][j].Nowcode_rating+")"+" | "+fuck[i][j].Atcode+" | "+fuck[i][j].Atcode_rating+" | "+"\n";
                 arr.add(two);
             }
         }

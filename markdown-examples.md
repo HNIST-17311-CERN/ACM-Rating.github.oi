@@ -1,4 +1,7 @@
+
 # Markdown Extension Examples
+
+<div id="gitalk-container"></div>
 
 This page demonstrates some of the built-in markdown extensions provided by VitePress.
 

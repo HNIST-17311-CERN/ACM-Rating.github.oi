@@ -1,9 +1,8 @@
 import { defineConfig } from 'vitepress'
 
-
-
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  
   base: "/ACM-Rating.github.oi/",
   title: "我的牛逼网站",
   description: "A VitePress Site",
