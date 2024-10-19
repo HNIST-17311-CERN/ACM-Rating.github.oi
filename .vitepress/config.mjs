@@ -1,9 +1,5 @@
 import { defineConfig } from 'vitepress'
-import {
-  VPTeamPage,
-  VPTeamPageTitle,
-  VPTeamMembers
-} from 'vitepress/theme'
+
 // https://vitepress.dev/reference/site-config
 
 
