@@ -6,7 +6,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   
-  base: "/ACM-Rating.github.oi/",
+ // base: "/ACM-Rating.github.oi/",
   title: "ACM-Rating",
   description: "A VitePress Site",
   themeConfig: {
