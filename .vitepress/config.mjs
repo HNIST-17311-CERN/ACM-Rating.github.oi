@@ -1,22 +1,33 @@
 import { defineConfig } from 'vitepress'
-
+import {
+  VPTeamPage,
+  VPTeamPageTitle,
+  VPTeamMembers
+} from 'vitepress/theme'
 // https://vitepress.dev/reference/site-config
+
+
+
 export default defineConfig({
   
   base: "/ACM-Rating.github.oi/",
-  title: "我的牛逼网站",
+  title: "ACM-Rating",
   description: "A VitePress Site",
-  logo: 'public\qitao.png',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
-      { text: 'ACM', link: '/markdown-examples' }
+      { text: 'ACM', link: '/markdown-examples' },
+      { text: 'TEAM', link: '/team'}
     ],
+
+    logo: '/qitao.png',
+
 
     sidebar: [
       {
         text: 'ACM',
+        collapsed: false,
         items: [
           { text: 'Markdown 示例', link: '/markdown-examples' },
           { text: 'Runtime API 示例', link: '/api-examples' },
@@ -24,6 +35,7 @@ export default defineConfig({
         ]
       }
     ],
+
  
 
     socialLinks: [
@@ -34,6 +46,26 @@ export default defineConfig({
         },
           link: 'https://space.bilibili.com/35804528?spm_id_from=333.1007.0.0'
       }
-    ]
+    ],
+
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2019-present Evan You'
+    },
+
+    editLink: {
+      pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
+      text: 'Edit this page on GitHub'
+    },
+
+    search: {
+      provider: 'local'
+    },
+
+    carbonAds: {
+      code: 'your-carbon-code',
+      placement: 'your-carbon-placement'
+    }
+
   }
 })

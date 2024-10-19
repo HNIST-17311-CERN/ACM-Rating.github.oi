@@ -23,7 +23,7 @@ public class RUN {
     static String atcode_URL="https://atcoder.jp/users/=";
     static Fuck [][]fuck=new Fuck[2][3];
     static codeforces_color [] cf_color=new codeforces_color[10];
-    static nowcode_color [] nc_color=new nowcode_color[5];
+    static nowcode_color [] nc_color=new nowcode_color[7];
     public static void main(String[] args) throws Exception {
         for(int i=0;i<10;i++)
         {
@@ -52,7 +52,7 @@ public class RUN {
         cf_color[9].color=" <font color=#000000>";
         String end="</font>";
         //
-        for(int i=0;i<5;i++)
+        for(int i=0;i<7;i++)
         {
             nc_color[i]=new nowcode_color();
         }
@@ -62,6 +62,15 @@ public class RUN {
         nc_color[2].rank="rate-score3";
         nc_color[3].rank="rate-score4";
         nc_color[4].rank="rate-score5";
+        nc_color[5].rank="rate-score6";
+        nc_color[6].rank="rate-score7";
+        nc_color[0].color="<font color=#b4b4b4>";
+        nc_color[1].color="<font color=#c177e7>";
+        nc_color[2].color="<font color=#5ea1f4>";
+        nc_color[3].color="<font color=#25bb9b>";
+        nc_color[4].color="<font color=#ffd700>";
+        nc_color[5].color="<font color=#ffa500>";
+        nc_color[6].color="<font color=red>";
         //fuck
         excell x = new excell();
         JOSN api = new JOSN();
@@ -90,13 +99,20 @@ public class RUN {
                             String o1=jsonObject1.getString("rating");
                             fuck[i][j].CodeForces_rating=o1;
                             String o2=jsonObject1.getString("rank");
+                            System.out.println(o2);
                             fuck[i][j].CodeForces_rank=o2;
-                            for(int e=0;e<10;e++)
+                            if(o2==null)
                             {
-                                if(cf_color[e].rank.equals(o2))
-                                {
-                                    fuck[i][j].CodeForces_color=cf_color[e].color;
-                                    break;
+                                fuck[i][j].CodeForces_rank = "unrated";
+                                fuck[i][j].CodeForces_color = cf_color[0].color;
+                            }
+                            else
+                            {
+                                for (int e = 0; e < 10; e++) {
+                                    if (cf_color[e].rank.equals(o2)) {
+                                        fuck[i][j].CodeForces_color = cf_color[e].color;
+                                        break;
+                                    }
                                 }
                             }
                         }
@@ -115,8 +131,68 @@ public class RUN {
                         if (ratingElement != null) {
                             String rating = ratingElement.text();
                             fuck[i][j].Nowcode_rating=rating;
-                        } else {
+                            int score = Integer.parseInt(rating);
+                            if(score<=699)
+                            {
+                                fuck[i][j].Nowcode_color=nc_color[0].color;
+                            }
+                            else if(score>=700&&score<=1099)
+                            {
+                                fuck[i][j].Nowcode_color=nc_color[1].color;
+                            }
+                            else if(score>=1100&&score<=1499)
+                            {
+                                fuck[i][j].Nowcode_color=nc_color[2].color;
+                            }
+                            else if(score>=1500&&score<=1999)
+                            {
+                                fuck[i][j].Nowcode_color=nc_color[3].color;
+                            }
+                            else if(score>=2000&&score<=2399)
+                            {
+                                fuck[i][j].Nowcode_color=nc_color[4].color;
+                            }
+                            else if(score>=2400&&score<=2799)
+                            {
+                               fuck[i][j].Nowcode_color=nc_color[5].color;
+                            }
+                            else if(score>=2800)
+                            {
+                                fuck[i][j].Nowcode_color=nc_color[6].color;
+                            }
+                        }
+                        else
+                        {
                             fuck[i][j].Nowcode_rating="0";
+                            int score=0;
+                            if(score<=699)
+                            {
+                                fuck[i][j].Nowcode_color=nc_color[0].color;
+                            }
+                            else if(score>=700&&score<=1099)
+                            {
+                                fuck[i][j].Nowcode_color=nc_color[1].color;
+                            }
+                            else if(score>=1100&&score<=1499)
+                            {
+                                fuck[i][j].Nowcode_color=nc_color[2].color;
+                            }
+                            else if(score>=1500&&score<=1999)
+                            {
+                                fuck[i][j].Nowcode_color=nc_color[3].color;
+                            }
+                            else if(score>=2000&&score<=2399)
+                            {
+                                fuck[i][j].Nowcode_color=nc_color[4].color;
+                            }
+                            else if(score>=2500&&score<=2799)
+                            {
+                                fuck[i][j].Nowcode_color=nc_color[5].color;
+                            }
+                            else if(score>=2800)
+                            {
+                                fuck[i][j].Nowcode_color=nc_color[6].color;
+                            }
                         }
 
                     }
@@ -136,7 +212,7 @@ public class RUN {
         {
             for(int j=0;j<x.length;j++)
             {
-                String two="| "+" | "+fuck[i][j].Name+" | "+"["+fuck[i][j].CodeForces+"]"+"(https://codeforces.com/profile/"+fuck[i][j].CodeForces+")"+"("+fuck[i][j].CodeForces_color+fuck[i][j].CodeForces_rating+end+")"+" | "+"["+fuck[i][j].Nowcode+"]"+"(https://ac.nowcoder.com/acm/contest/rating-index?searchUserName="+fuck[i][j].Nowcode+")"+"("+fuck[i][j].Nowcode_rating+")"+" | "+fuck[i][j].Atcode+" | "+fuck[i][j].Atcode_rating+" | "+"\n";
+                String two="| "+" | "+fuck[i][j].Name+" | "+"["+fuck[i][j].CodeForces_color+fuck[i][j].CodeForces+" "+"("+fuck[i][j].CodeForces_rating+")"+end+"]"+"(https://codeforces.com/profile/"+fuck[i][j].CodeForces+")"+" | "+fuck[i][j].Nowcode_color+"["+fuck[i][j].Nowcode+"]"+"(https://ac.nowcoder.com/acm/contest/rating-index?searchUserName="+fuck[i][j].Nowcode+")"+"("+fuck[i][j].Nowcode_rating+")"+end+" | "+fuck[i][j].Atcode+" | "+fuck[i][j].Atcode_rating+" | "+"\n";
                 arr.add(two);
             }
         }

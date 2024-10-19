@@ -100,8 +100,8 @@
 
   --vp-home-hero-image-background-image: linear-gradient(
     -45deg,
-    #bd34fe 50%,
-    #47caff 50%
+    #000000 50%,
+    #000000 50%
   );
   --vp-home-hero-image-filter: blur(44px);
 }
@@ -136,4 +136,6 @@
 .DocSearch {
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
+
+
 

@@ -1,11 +1,12 @@
 ---
+
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 #fuck
 hero:
-  name: "我的牛逼网站"
-  text: "飞起来"
-  tagline: 我的牛逼网站
+  name: "17311-rating"
+  text: "WLAN：HQYJ_CC401C"
+  tagline: "密码: HQYJ12345678"
   image:
     src: /source.gif
     alt: qitao
@@ -16,13 +17,32 @@ hero:
     - theme: alt
       text: nowcoder
       link: https://ac.nowcoder.com/acm/contest/vip-index?topCategoryFilter=13
+    - theme: brand
+      text: Atcoder
+      link: https://atcoder.jp/
+    - theme: alt
+      text: leetcode
+      link: https://leetcode.cn/
+
 # fuck 
 features:
-  - title: 屁股1
-    details: 待到秋来九月八,我花开后百花杀.
-  - title: 屁股2
-    details: 留白
-  - title: 屁股3
-    details: 犀利马哈                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+  - title: 
+    details: 
+  - title: 
+    details: 
+  - title: 
+    details:                                                                                                                                              
+  - title: 
+    details: 
+  - title: 
+    details: 
+  - title: 
+    details:
+  - title: 
+    details: 
+  - title: 
+    details: 
+  - title: 
+    details:                                                                                                                                                                                                                                     
 ---
 
