@@ -33,24 +33,24 @@ export default defineConfig({
         ]
       }
     ],
-    sidebar:[
-      {
-        text: '题解',
-        //collapsed: false,
-        items: [
-          { text: '题解1', link: '/题解1'}
-        ],
-      }
-    ],
-    sidebar:[
-      {
-        text: '教程',
-        //collapsed: false,
-        items: [
-          { text: 'TEAM', link: '/team'}
-        ]
-      }
-    ],
+    // sidebar:[
+    //   {
+    //     text: '题解',
+    //     //collapsed: false,
+    //     items: [
+    //       { text: '题解1', link: '/题解1'}
+    //     ],
+    //   }
+    // ],
+    // sidebar:[
+    //   {
+    //     text: '教程',
+    //     //collapsed: false,
+    //     items: [
+    //       { text: 'TEAM', link: '/team'}
+    //     ]
+    //   }
+    // ],
 
  
 
