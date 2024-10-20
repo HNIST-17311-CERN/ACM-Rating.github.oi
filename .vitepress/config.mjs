@@ -6,28 +6,48 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   
+  head: [["link", { rel: "icon", href: "/3d349c4e71a3ed385d9d5820d0af18d59acdcac3b3ff81ac7.ico" }]],
  // base: "/ACM-Rating.github.oi/",
-  title: "ACM-Rating",
+  title: "Ciallo～(∠・ω<)⌒☆",
   description: "A VitePress Site",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
-      { text: 'ACM', link: '/markdown-examples' },
-      { text: 'TEAM', link: '/team'}
+      { text: 'ACM', link: '/markdown-examples' }
     ],
 
-    logo: '/qitao.png',
+
+    logo: '/1720977642826.jpg',
 
 
     sidebar: [
       {
-        text: 'ACM',
-        collapsed: false,
+        text: 'rating',
+        //collapsed: false,
         items: [
           { text: 'Markdown 示例', link: '/markdown-examples' },
           { text: 'Runtime API 示例', link: '/api-examples' },
-          { text: 'rating', link: 'java/src/main/resources/ingrat'}
+          { text: 'rating', link: 'java/src/main/resources/ingrat'},
+          { text: '题解1', link: '/题解1'}
+        ]
+      }
+    ],
+    sidebar:[
+      {
+        text: '题解',
+        //collapsed: false,
+        items: [
+          { text: '题解1', link: '/题解1'}
+        ],
+      }
+    ],
+    sidebar:[
+      {
+        text: '教程',
+        //collapsed: false,
+        items: [
+          { text: 'TEAM', link: '/team'}
         ]
       }
     ],
