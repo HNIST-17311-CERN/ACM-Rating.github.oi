@@ -13,8 +13,28 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: '首页', link: '/' },
-      { text: 'ACM', link: '/markdown-examples' }
+     { 
+      text :'家',items:[
+      { text: '首页', link: '/' }
+      ]
+    },
+      {
+        text :'ACM',items:[
+      { text: 'markdown-examples', link: '/markdown-examples' },
+      {text:'API',link:'/api-examples'},
+      { text: 'rating', link: 'java/src/main/resources/ingrat'},
+      ]
+    },
+    { 
+      text :'题解',items:[
+        { text: '题解1', link: '/题解1'}
+      ]
+    },
+    { 
+      text :'教程',items:[
+        { text: '题解1', link: '/题解1'}
+      ]
+    }
     ],
 
 
