@@ -5,12 +5,15 @@ import { defineConfig } from 'vitepress'
 
 
 export default defineConfig({
-  
   head: [["link", { rel: "icon", href: "/3d349c4e71a3ed385d9d5820d0af18d59acdcac3b3ff81ac7.ico" }]],
  // base: "/ACM-Rating.github.oi/",
   title: "Ciallo～(∠・ω<)⌒☆",
   description: "A VitePress Site",
   themeConfig: {
+
+      outlineTitle: "页面目录",
+      outline: [2,6],
+
     // https://vitepress.dev/reference/default-theme-config
     nav: [
      { 
@@ -32,7 +35,19 @@ export default defineConfig({
     },
     { 
       text :'教程',items:[
-        { text: '题解1', link: '/题解1'}
+        { text: 'vitepress搭建并部署网站', link: '/题解1'}
+      ]
+    },
+    { 
+      text :'资源',items:[
+        { text: '软件', link: '/sour/viod'},
+        { text: '视频', link: '/sour/look'},
+        { text: '网站', link: '/题解1'}
+      ]
+    },
+    { 
+      text :'文章',items:[
+        { text: 'vitepress搭建并部署网站', link: '/题解1'}
       ]
     }
     ],
@@ -43,13 +58,35 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'rating',
-        //collapsed: false,
+        text: 'ACM',
+        collapsed: false,
         items: [
           { text: 'Markdown 示例', link: '/markdown-examples' },
           { text: 'Runtime API 示例', link: '/api-examples' },
           { text: 'rating', link: 'java/src/main/resources/ingrat'},
+        ]
+      },
+      {
+        text: '题解',
+        collapsed: false,
+        items: [
           { text: '题解1', link: '/题解1'}
+        ]
+      },
+      {
+        text: '教程',
+        collapsed: false,
+        items: [
+          { text: 'vitepress搭建并部署网站', link: '/题解1'}
+        ]
+      },
+      {
+        text: '资源',
+        collapsed: false,
+        items: [
+          { text: '软件', link: '/sour/viod'},
+          { text: '视频', link: '/sour/look'},
+          { text: '网站', link: '/题解1'}
         ]
       }
     ],

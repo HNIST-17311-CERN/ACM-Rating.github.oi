@@ -212,7 +212,7 @@ public class RUN {
         {
             for(int j=0;j<x.length;j++)
             {
-                String two="| "+" | "+fuck[i][j].Name+" | "+"["+fuck[i][j].CodeForces_color+fuck[i][j].CodeForces+" "+"("+fuck[i][j].CodeForces_rating+")"+end+"]"+"(https://codeforces.com/profile/"+fuck[i][j].CodeForces+")"+" | "+fuck[i][j].Nowcode_color+"["+fuck[i][j].Nowcode+"]"+"(https://ac.nowcoder.com/acm/contest/rating-index?searchUserName="+fuck[i][j].Nowcode+")"+"("+fuck[i][j].Nowcode_rating+")"+end+" | "+fuck[i][j].Atcode+" | "+fuck[i][j].Atcode_rating+" | "+"\n";
+                String two="| "+" | "+fuck[i][j].Name+" | "+"["+fuck[i][j].CodeForces_color+fuck[i][j].CodeForces+" "+"("+fuck[i][j].CodeForces_rating+")"+end+"]"+"(https://codeforces.com/profile/"+fuck[i][j].CodeForces+")"+" | "+"["+fuck[i][j].Nowcode_color+fuck[i][j].Nowcode+"("+fuck[i][j].Nowcode_rating+")"+end+"]"+"(https://ac.nowcoder.com/acm/contest/rating-index?searchUserName="+fuck[i][j].Nowcode+")"+" | "+fuck[i][j].Atcode+" | "+fuck[i][j].Atcode_rating+" | "+"\n";
                 arr.add(two);
             }
         }
