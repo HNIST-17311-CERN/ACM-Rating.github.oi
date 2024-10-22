@@ -42,12 +42,12 @@ export default defineConfig({
       text :'资源',items:[
         { text: '软件', link: '/sour/viod'},
         { text: '视频', link: '/sour/look'},
-        { text: '网站', link: '/题解1'}
+        { text: '网站', link: '/sour/web'}
       ]
     },
     { 
       text :'文章',items:[
-        { text: 'vitepress搭建并部署网站', link: '/题解1'}
+        { text: '特殊', link: '/txttt/tx1'}
       ]
     }
     ],
