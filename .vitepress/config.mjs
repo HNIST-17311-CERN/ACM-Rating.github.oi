@@ -48,7 +48,7 @@ export default defineConfig({
     { 
       text :'文章',items:[
         { text: 'vitepress搭建并部署网站', link: '/题解1'},
-        { text: '【洛谷深基】第1章 简简单单写程序v202104', link: '/public/电子书/【洛谷深基】第1章 简简单单写程序v202104'}
+        { text: '【洛谷深基】第1章 简简单单写程序v202104', link: '/public/电子书/ppddff'}
       ]
     }
     ],
