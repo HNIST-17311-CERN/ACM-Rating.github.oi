@@ -23,7 +23,9 @@ hero:
     - theme: alt
       text: leetcode
       link: https://leetcode.cn/
-
+    - theme: brand
+      text: 留言板
+      link: https://github.com/HNIST-17311-CERN/ACM-Rating.github.oi/issues
 # fuck 
 features:
   - title: 公告.1
