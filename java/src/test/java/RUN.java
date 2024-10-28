@@ -29,7 +29,7 @@ public class RUN {
         {
             cf_color[i]=new codeforces_color();
         }
-        //
+        //1
         cf_color[0].rank="unrated";
         cf_color[1].rank="newbie";
         cf_color[2].rank="pupil";
