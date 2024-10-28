@@ -17,6 +17,7 @@ import org.jsoup.select.Elements;
 
 public class RUN {
 
+
     static Scanner sc = new Scanner(System.in);
     static String codeforces_URL="https://codeforces.com/api/user.info?checkHistoricHandles=false&handles=";
     static String nowcode_URL="https://ac.nowcoder.com/acm/user/=";
@@ -73,9 +74,10 @@ public class RUN {
         nc_color[6].color="<font color=red>";
         //fuck
         excell x = new excell();
+        int LHC=x.LHC;
         JOSN api = new JOSN();
         x.EXC();
-        for(int i=0;i<2;i++)
+        for(int i=0;i<LHC;i++)
         {
             for(int j=0;j<x.length;j++)
             {
@@ -208,7 +210,7 @@ public class RUN {
         List<String>arr = new ArrayList<String>();
         String one="| 年级 | 姓名 | Codeforces | Nowcoder | AtCoder |\n";
         String tow="| :---: | :---: | :---: | :---: | :---: |\n";
-        for(int i=0;i<2;i++)
+        for(int i=0;i<LHC;i++)
         {
             for(int j=0;j<x.length;j++)
             {
@@ -220,7 +222,7 @@ public class RUN {
         ans+=one;
         ans+=tow;
         int yyye=2023;
-        for(int i=0;i<2;i++)
+        for(int i=0;i<LHC;i++)
         {
             String tree="| "+yyye+" |  |  |  |  |\n";
             ans+=tree;

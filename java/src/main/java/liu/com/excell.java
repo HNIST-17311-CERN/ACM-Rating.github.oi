@@ -19,8 +19,9 @@ public class excell {
     static String PATH= "src/main/resources/rating.xlsx";
     public static int length=0;
     public static int weight=0;
+    public static int LHC=1;
     //2023届数据
-    public static man[][] Man=new man[2][3];
+    public static man[][] Man=new man[LHC][100];
 
 
     public void EXC() throws Exception {
@@ -29,7 +30,7 @@ public class excell {
         //1，创建一个工作簿
         Workbook workbook = new XSSFWorkbook(inputStream);
         //2,得到表
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < LHC; i++) {
             Sheet sheet = workbook.getSheetAt(i);
             length = sheet.getLastRowNum();
             for (int j = 0; j < sheet.getLastRowNum(); j++) {
