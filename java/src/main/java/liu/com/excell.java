@@ -17,13 +17,11 @@ import okhttp3.Response;
 
 public class excell {
     static String PATH= "src/main/resources/rating.xlsx";
-    public static int length=0;
     public static int weight=0;
-    public static int LHC=1;
+    public static int LHC=2;
     //2023届数据
     public static man[][] Man=new man[LHC][100];
-
-
+    public static int[] Length=new int[2];
     public void EXC() throws Exception {
         //获取文件流
         FileInputStream inputStream = new FileInputStream(PATH);
@@ -31,8 +29,11 @@ public class excell {
         Workbook workbook = new XSSFWorkbook(inputStream);
         //2,得到表
         for (int i = 0; i < LHC; i++) {
+            int length=0;
             Sheet sheet = workbook.getSheetAt(i);
             length = sheet.getLastRowNum();
+            Length[i]=length;
+            System.out.println(length);
             for (int j = 0; j < sheet.getLastRowNum(); j++) {
                 Row row = sheet.getRow(j + 1);
                 Man[i][j] = new man();

@@ -35,7 +35,7 @@ export default defineConfig({
     },
     { 
       text :'教程',items:[
-        { text: 'vitepress搭建并部署网站', link: '/题解1'}
+        { text: 'vitepress搭建并部署网站', link: '/txttt/tx1'}
       ]
     },
     { 
@@ -77,7 +77,7 @@ export default defineConfig({
         text: '教程',
         collapsed: false,
         items: [
-          { text: 'vitepress搭建并部署网站', link: '/题解1'}
+          { text: 'vitepress搭建并部署网站', link: '/txttt/tx1'}
         ]
       },
       {

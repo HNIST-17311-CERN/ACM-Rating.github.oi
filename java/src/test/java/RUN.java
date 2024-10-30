@@ -22,7 +22,8 @@ public class RUN {
     static String codeforces_URL="https://codeforces.com/api/user.info?checkHistoricHandles=false&handles=";
     static String nowcode_URL="https://ac.nowcoder.com/acm/user/=";
     static String atcode_URL="https://atcoder.jp/users/=";
-    static Fuck [][]fuck=new Fuck[2][3];
+    static int LHC_2=2;
+    static Fuck [][]fuck=new Fuck[LHC_2][100];
     static codeforces_color [] cf_color=new codeforces_color[10];
     static nowcode_color [] nc_color=new nowcode_color[7];
     public static void main(String[] args) throws Exception {
@@ -79,7 +80,7 @@ public class RUN {
         x.EXC();
         for(int i=0;i<LHC;i++)
         {
-            for(int j=0;j<x.length;j++)
+            for(int j=0;j<x.Length[i];j++)
             {
                 fuck[i][j]=new Fuck();
                 fuck[i][j].Name=x.Man[i][j].name;
@@ -212,7 +213,7 @@ public class RUN {
         String tow="| :---: | :---: | :---: | :---: | :---: |\n";
         for(int i=0;i<LHC;i++)
         {
-            for(int j=0;j<x.length;j++)
+            for(int j=0;j<x.Length[i];j++)
             {
                 String two="| "+" | "+fuck[i][j].Name+" | "+"["+fuck[i][j].CodeForces_color+fuck[i][j].CodeForces+" "+"("+fuck[i][j].CodeForces_rating+")"+end+"]"+"(https://codeforces.com/profile/"+fuck[i][j].CodeForces+")"+" | "+"["+fuck[i][j].Nowcode_color+fuck[i][j].Nowcode+"("+fuck[i][j].Nowcode_rating+")"+end+"]"+"(https://ac.nowcoder.com/acm/contest/rating-index?searchUserName="+fuck[i][j].Nowcode+")"+" | "+fuck[i][j].Atcode+" | "+fuck[i][j].Atcode_rating+" | "+"\n";
                 arr.add(two);
@@ -222,13 +223,19 @@ public class RUN {
         ans+=one;
         ans+=tow;
         int yyye=2023;
+        int opt=0;
         for(int i=0;i<LHC;i++)
         {
             String tree="| "+yyye+" |  |  |  |  |\n";
             ans+=tree;
-            for(int j=0;j<x.length;j++)
+            for(int j=opt;j<x.Length[i];j++)
             {
-                ans+=arr.get(j+i*x.length);
+                ans+=arr.get(j);
+            }
+            opt+=x.Length[i];
+            if(i+1<LHC)
+            {
+                x.Length[i+1]+=opt;
             }
             yyye++;
         }
