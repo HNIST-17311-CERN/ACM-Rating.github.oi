@@ -35,4 +35,4 @@
 |  | 刘玉玲 | [ <font color=#0000>Liuyuling  (null)</font>](https://codeforces.com/profile/Liuyuling ) | [<font color=#b4b4b4>Liuyuling (0)</font>](https://ac.nowcoder.com/acm/contest/rating-index?searchUserName=Liuyuling ) | null | null | 
 |  | 李文瑤 | [ <font color=#0000>【名字未填写】 (null)</font>](https://codeforces.com/profile/【名字未填写】) | [<font color=#b4b4b4>李文瑶(0)</font>](https://ac.nowcoder.com/acm/contest/rating-index?searchUserName=李文瑶) | null | null | 
 |  | 李欣怡 | [ <font color=#0000>timekeeper25 (null)</font>](https://codeforces.com/profile/timekeeper25) | [<font color=#b4b4b4>timekeeper25(0)</font>](https://ac.nowcoder.com/acm/contest/rating-index?searchUserName=timekeeper25) | null | null | 
-|  | 郭迪迪 | [ <font color=#0000>【名字未填写】 (null)</font>](https://codeforces.com/profile/【名字未填写】) | [<font color=#b4b4b4>Sunlight _yg(0)</font>](https://ac.nowcoder.com/acm/contest/rating-index?searchUserName=Sunlight_yg) | null | null | 
+|  | 郭迪迪 | [ <font color=#0000>【名字未填写】 (null)</font>](https://codeforces.com/profile/【名字未填写】) | [<font color=#b4b4b4>Sunlight _yg(0)</font>](https://ac.nowcoder.com/acm/contest/rating-index?searchUserName=Sunlight_yg) | null | null |
