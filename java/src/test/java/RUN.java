@@ -1,4 +1,3 @@
-
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -157,7 +156,7 @@ public class RUN {
                             }
                             else if(score>=2400&&score<=2799)
                             {
-                               fuck[i][j].Nowcode_color=nc_color[5].color;
+                                fuck[i][j].Nowcode_color=nc_color[5].color;
                             }
                             else if(score>=2800)
                             {
