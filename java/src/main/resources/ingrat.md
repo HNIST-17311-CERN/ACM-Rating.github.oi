@@ -1,9 +1,9 @@
 | 年级 | 姓名 | Codeforces | Nowcoder | AtCoder |
 | :---: | :---: | :---: | :---: | :---: |
 | 2023 |  |  |  |  |
-|  | 胡岩松 | [ <font color=#008000>Shimu_Guyue (1233)</font>](https://codeforces.com/profile/Shimu_Guyue) | [<font color=#5ea1f4>Shimu_Guyue(1432)</font>](https://ac.nowcoder.com/acm/contest/rating-index?searchUserName=Shimu_Guyue) | null | null | 
+|  | 胡岩松 | [ <font color=#808080>Shimu_Guyue (1197)</font>](https://codeforces.com/profile/Shimu_Guyue) | [<font color=#5ea1f4>Shimu_Guyue(1408)</font>](https://ac.nowcoder.com/acm/contest/rating-index?searchUserName=Shimu_Guyue) | null | null | 
 |  | 刘俊茗 | [ <font color=#808080>2440539709 (985)</font>](https://codeforces.com/profile/2440539709) | [<font color=#c177e7>CERN_______________(814)</font>](https://ac.nowcoder.com/acm/contest/rating-index?searchUserName=CERN_______________) | null | null | 
-|  | 林友能 | [ <font color=#0000>linyouneng (null)</font>](https://codeforces.com/profile/linyouneng) | [<font color=#c177e7>洛林林(770)</font>](https://ac.nowcoder.com/acm/contest/rating-index?searchUserName=洛林林) | null | null | 
+|  | 林友能 | [ <font color=#0000>linyouneng (null)</font>](https://codeforces.com/profile/linyouneng) | [<font color=#c177e7>洛林林(781)</font>](https://ac.nowcoder.com/acm/contest/rating-index?searchUserName=洛林林) | null | null | 
 |  | 颜文渝 | [ <font color=#808080>cantimereverse (403)</font>](https://codeforces.com/profile/cantimereverse) | [<font color=#5ea1f4>yan_Wy(1113)</font>](https://ac.nowcoder.com/acm/contest/rating-index?searchUserName=yan_Wy) | null | null | 
 | 2024 |  |  |  |  |
 |  | 彭雅琪 | [ <font color=#0000>jaine_Q (null)</font>](https://codeforces.com/profile/jaine_Q) | [<font color=#b4b4b4>jaine_Q(0)</font>](https://ac.nowcoder.com/acm/contest/rating-index?searchUserName=jaine_Q) | null | null | 
