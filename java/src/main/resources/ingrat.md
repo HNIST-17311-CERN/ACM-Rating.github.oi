@@ -1,9 +1,9 @@
 | 年级 | 姓名 | Codeforces | Nowcoder | AtCoder |
 | :---: | :---: | :---: | :---: | :---: |
 | 2023 |  |  |  |  |
-|  | 胡岩松 | [ <font color=#808080>Shimu_Guyue (1197)</font>](https://codeforces.com/profile/Shimu_Guyue) | [<font color=#5ea1f4>Shimu_Guyue(1408)</font>](https://ac.nowcoder.com/acm/contest/rating-index?searchUserName=Shimu_Guyue) | null | null | 
+|  | 胡岩松 | [ <font color=#808080>Shimu_Guyue (1156)</font>](https://codeforces.com/profile/Shimu_Guyue) | [<font color=#5ea1f4>Shimu_Guyue(1458)</font>](https://ac.nowcoder.com/acm/contest/rating-index?searchUserName=Shimu_Guyue) | null | null | 
 |  | 刘俊茗 | [ <font color=#808080>2440539709 (985)</font>](https://codeforces.com/profile/2440539709) | [<font color=#c177e7>CERN_______________(814)</font>](https://ac.nowcoder.com/acm/contest/rating-index?searchUserName=CERN_______________) | null | null | 
-|  | 林友能 | [ <font color=#0000>linyouneng (null)</font>](https://codeforces.com/profile/linyouneng) | [<font color=#c177e7>洛林林(781)</font>](https://ac.nowcoder.com/acm/contest/rating-index?searchUserName=洛林林) | null | null | 
+|  | 林友能 | [ <font color=#0000>linyouneng (null)</font>](https://codeforces.com/profile/linyouneng) | [<font color=#c177e7>洛林林(788)</font>](https://ac.nowcoder.com/acm/contest/rating-index?searchUserName=洛林林) | null | null | 
 |  | 颜文渝 | [ <font color=#808080>cantimereverse (403)</font>](https://codeforces.com/profile/cantimereverse) | [<font color=#5ea1f4>yan_Wy(1113)</font>](https://ac.nowcoder.com/acm/contest/rating-index?searchUserName=yan_Wy) | null | null | 
 | 2024 |  |  |  |  |
 |  | 彭雅琪 | [ <font color=#0000>jaine_Q (null)</font>](https://codeforces.com/profile/jaine_Q) | [<font color=#b4b4b4>jaine_Q(0)</font>](https://ac.nowcoder.com/acm/contest/rating-index?searchUserName=jaine_Q) | null | null | 
@@ -16,13 +16,13 @@
 |  | 唐喆 | [ <font color=#0000>——————wangl (null)</font>](https://codeforces.com/profile/——————wangl) | [<font color=#b4b4b4>紫罗兰永恒花园—(0)</font>](https://ac.nowcoder.com/acm/contest/rating-index?searchUserName=紫罗兰永恒花园—) | null | null | 
 |  | 唐家鸿 | [ <font color=#0000>wasxy (null)</font>](https://codeforces.com/profile/wasxy) | [<font color=#b4b4b4>唐家鸿(388)</font>](https://ac.nowcoder.com/acm/contest/rating-index?searchUserName=唐家鸿) | null | null | 
 |  | 唐鸿辉 | [ <font color=#0000>Thh2006 (null)</font>](https://codeforces.com/profile/Thh2006) | [<font color=#b4b4b4>Thh2006(690)</font>](https://ac.nowcoder.com/acm/contest/rating-index?searchUserName=Thh2006) | null | null | 
-|  | 刘暄妍 | [ <font color=#0000>lxy0830 (null)</font>](https://codeforces.com/profile/lxy0830) | [<font color=#b4b4b4>女开0830(637)</font>](https://ac.nowcoder.com/acm/contest/rating-index?searchUserName=女开0830) | null | null | 
+|  | 刘暄妍 | [ <font color=#0000>lxy0830 (null)</font>](https://codeforces.com/profile/lxy0830) | [<font color=#b4b4b4>女开0830(575)</font>](https://ac.nowcoder.com/acm/contest/rating-index?searchUserName=女开0830) | null | null | 
 |  | 刘翔 | [ <font color=#0000>awdsad (null)</font>](https://codeforces.com/profile/awdsad) | [<font color=#b4b4b4>刘翔2024(497)</font>](https://ac.nowcoder.com/acm/contest/rating-index?searchUserName=刘翔2024) | null | null | 
 |  | 陶家福 | [ <font color=#0000>smallniu (null)</font>](https://codeforces.com/profile/smallniu) | [<font color=#b4b4b4>牛哄哄868(595)</font>](https://ac.nowcoder.com/acm/contest/rating-index?searchUserName=牛哄哄868) | null | null | 
 |  | 刘晓芸 | [ <font color=#0000>Xyun_ (null)</font>](https://codeforces.com/profile/Xyun_) | [<font color=#b4b4b4>乌云上仙(0)</font>](https://ac.nowcoder.com/acm/contest/rating-index?searchUserName=乌云上仙) | null | null | 
 |  | 彭雅婷 | [ <font color=#0000>pyt2006--- (null)</font>](https://codeforces.com/profile/pyt2006---) | [<font color=#b4b4b4>是杰宝哇(0)</font>](https://ac.nowcoder.com/acm/contest/rating-index?searchUserName=是杰宝哇) | null | null | 
 |  | 张敏 | [ <font color=#0000>MiLi5024 (null)</font>](https://codeforces.com/profile/MiLi5024) | [<font color=#b4b4b4>MiLi5024(556)</font>](https://ac.nowcoder.com/acm/contest/rating-index?searchUserName=MiLi5024) | null | null | 
-|  | 曾雯 | [ <font color=#0000>wen8 (null)</font>](https://codeforces.com/profile/wen8) | [<font color=#b4b4b4>wen8(595)</font>](https://ac.nowcoder.com/acm/contest/rating-index?searchUserName=wen8) | null | null | 
+|  | 曾雯 | [ <font color=#0000>wen8 (null)</font>](https://codeforces.com/profile/wen8) | [<font color=#b4b4b4>wen8(571)</font>](https://ac.nowcoder.com/acm/contest/rating-index?searchUserName=wen8) | null | null | 
 |  | 李子超 | [ <font color=#0000>zc592 (null)</font>](https://codeforces.com/profile/zc592) | [<font color=#b4b4b4>努力zc(377)</font>](https://ac.nowcoder.com/acm/contest/rating-index?searchUserName=努力zc) | null | null | 
 |  | 陈康轩 | [ <font color=#0000>kangxuana (null)</font>](https://codeforces.com/profile/kangxuana) | [<font color=#c177e7>kangxuana(744)</font>](https://ac.nowcoder.com/acm/contest/rating-index?searchUserName=kangxuana) | null | null | 
 |  | 王斌 | [ <font color=#0000>【名字未填写】 (null)</font>](https://codeforces.com/profile/【名字未填写】) | [<font color=#b4b4b4>神里凌华的dog(436)</font>](https://ac.nowcoder.com/acm/contest/rating-index?searchUserName=神里凌华的dog) | null | null | 
